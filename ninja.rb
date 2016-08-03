@@ -7,7 +7,7 @@ class Ninja < Human
     end
 
     def steal(obj)
-        attack.obj
+        attack(obj)
         @health -= 10
     end
 

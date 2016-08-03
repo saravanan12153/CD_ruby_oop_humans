@@ -11,11 +11,11 @@ class Human
         puts health
     end
     def attack(obj)
-    if obj.class.ancestors.include?(Human)
-        obj.health -= 10
-        true
-    else
-        false
+        if obj.class.ancestors.include?(Human)
+            obj.health -= 10
+            true
+        else
+            false
     end
     end
 end
